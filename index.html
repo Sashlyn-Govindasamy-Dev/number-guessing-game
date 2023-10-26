@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/javascript.js" defer></script>
+
 </head>
 <body>
     <h1>Number guessing game</h1>
     <br>
     <p>
-        We have seleceted a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
+        We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
         We'll tell you if your guess was too high or too low.
     </p>
 
-    <form>
+    <form class="form">
         <label for="guessField">Enter a guess:</label>
         <input type="number" min="1" max="100" required id="guessField" class="guessField">
         <input type="submit" value="Submit guess" class="guessSubmit">
     </form>
+
+    <div class="resultParameters">
+        <p class="guesses"></p>
+        <p class="lastResult" style="background-color: white;"></p>
+        <p class="lowOrHi"></p>
+    </div>
 
 </body>
 </html>
